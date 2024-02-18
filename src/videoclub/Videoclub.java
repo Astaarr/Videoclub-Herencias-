@@ -5,16 +5,15 @@ public class Videoclub {
 	String titulo;
 	int precioAlquilar;
 	boolean alquilado;
-	
-	
+
 	// Creamos el constructor
 	public Videoclub(String titulo, int precioAlquilar, boolean alquilado) {
 		this.titulo = titulo;
 		this.precioAlquilar = precioAlquilar;
 		this.alquilado = alquilado;
 	}
-	
-	// Generamos los Getters and Setters 
+
+	// Generamos los Getters and Setters
 	public String getTitulo() {
 		return titulo;
 	}
@@ -38,23 +37,21 @@ public class Videoclub {
 	public void setAlquilado(boolean alquilado) {
 		this.alquilado = alquilado;
 	}
-	
+
 	public boolean alquilar() {
-	        if (!alquilado) {
-	            alquilado = true;
-	            return true;
-	        }
-	        return false;
-	    }
-	
+		if (!alquilado) {
+			alquilado = true;
+			return true;
+		}
+		return false;
+	}
+
 	public boolean devolver() {
-        if (alquilado) {
-            alquilado = false;
-            return true;
-        }
-        return false;
-    }
-	
-	
+		if (alquilado) {
+			alquilado = false;
+			return true;
+		}
+		return false;
+	}
 
 }

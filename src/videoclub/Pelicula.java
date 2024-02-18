@@ -2,10 +2,12 @@ package videoclub;
 
 public class Pelicula extends Videoclub {
 	
+	// Creamos las variables
 	String genero;
 	int año;
 	String director;
 	
+	// Creamos el constructor con su super para heredar de la clase padre
 	public Pelicula(String genero, int año, String director, String titulo, int precioAlquilar, boolean alquilado) {
 		super(titulo,precioAlquilar,alquilado);
 		this.genero = genero;
@@ -13,6 +15,7 @@ public class Pelicula extends Videoclub {
 		this.director = director;
 	}
 
+	// Getters and Setters
 	public String getGenero() {
 		return genero;
 	}
